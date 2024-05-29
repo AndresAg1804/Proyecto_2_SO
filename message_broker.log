@@ -16,3 +16,9 @@ KeyError: 'Berenjena'
 2024-05-27 12:18:20,472 Servidor iniciado en el puerto 50051
 2024-05-27 12:18:35,772 Mensaje recibido en el tema topic1: aja
 2024-05-27 12:19:17,973 Mensaje enviado del tema topic1: aja
+2024-05-29 00:12:19,572 Servidor iniciado en el puerto 50051
+2024-05-29 00:13:08,123 Servidor iniciado en el puerto 50051
+2024-05-29 00:14:05,869 Mensaje recibido en el tema topic1: messi
+2024-05-29 00:14:11,216 Mensaje recibido en el tema topic2: messi
+2024-05-29 00:14:17,239 Mensaje recibido en el tema topic3: messi>cr7
+2024-05-29 00:14:52,897 Mensaje enviado del tema topic1: messi

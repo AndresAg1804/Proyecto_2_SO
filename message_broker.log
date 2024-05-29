@@ -1,0 +1,18 @@
+2024-05-27 11:20:57,159 Exception calling application: 'Berenjena'
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/grpc/_server.py", line 609, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+  File "/home/ubuntu/Documents/Proyecto2_SO/./server.py", line 17, in Publish
+    with self.locks[topic]:
+KeyError: 'Berenjena'
+2024-05-27 12:08:17,697 Publicando mensaje en el tema topic1: agua
+2024-05-27 12:08:17,697 Mensaje recibido en el tema topic1: agua
+2024-05-27 12:09:02,832 Publicando mensaje en el tema topic1: a
+2024-05-27 12:09:02,832 Mensaje recibido en el tema topic1: a
+2024-05-27 12:09:07,848 Publicando mensaje en el tema topic2: a
+2024-05-27 12:09:07,848 Mensaje recibido en el tema topic2: a
+2024-05-27 12:09:12,384 Publicando mensaje en el tema topic3: a
+2024-05-27 12:09:12,384 Mensaje recibido en el tema topic3: a
+2024-05-27 12:18:20,472 Servidor iniciado en el puerto 50051
+2024-05-27 12:18:35,772 Mensaje recibido en el tema topic1: aja
+2024-05-27 12:19:17,973 Mensaje enviado del tema topic1: aja

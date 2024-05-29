@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+service MessageBroker {
+    rpc Publish (PublishRequest) returns (Empty) {}
+    rpc Subscribe (SubscribeRequest) returns (stream Message) {}
+}
+
+message PublishRequest {
+    string topic = 1;
+    string message = 2;
+}
+
+message SubscribeRequest {
+    string topic = 1;
+}
+
+message Message {
+    string topic = 1;
+    string message = 2;
+}
+
+message Empty {}

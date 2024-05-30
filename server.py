@@ -51,6 +51,9 @@ class MessageBrokerServicer(message_broker_pb2_grpc.MessageBrokerServicer):
                         yield message_broker_pb2.Message(topic=topic, message=message)
                     else:
                         time.sleep(1)  # Esperar antes de intentar nuevamente
+            except grpc.RpcError as e:
+                self.log_event(f'Error de RPC en Subscribe: {e}')
+                break
             except Exception as e:
                 self.log_event(f'Error en Subscribe: {e}')
                 context.set_details(str(e))
@@ -63,7 +66,10 @@ def serve():
     server.add_insecure_port('[::]:50051')
     server.start()
     logging.info('Servidor iniciado en el puerto 50051')
-    server.wait_for_termination()
+    try:
+        server.wait_for_termination()
+    except KeyboardInterrupt:
+        logging.info('Servidor detenido manualmente')
 
 if __name__ == '__main__':
     serve()

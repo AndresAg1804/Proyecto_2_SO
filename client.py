@@ -37,7 +37,7 @@ def run_subscriber():
             print(f'Tema desconocido: {topic}. Los temas válidos son: {", ".join(VALID_TOPICS)}')
             return
         try:
-            print("Si desea salir, presione Ctrl+Z.")
+            print("Si desea salir, presione Ctrl+C.")
             responses = stub.Subscribe(message_broker_pb2.SubscribeRequest(topic=topic))
             for response in responses:
                 print(f'Mensaje recibido en {response.topic}: {response.message}')

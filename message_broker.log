@@ -63,3 +63,187 @@ KeyError: 'Berenjena'
 2024-05-30 22:58:30,329 Servidor detenido manualmente
 2024-05-30 22:59:06,663 Servidor iniciado en el puerto 50051
 2024-05-30 22:59:07,535 Servidor detenido manualmente
+2024-05-31 21:47:59,709 Servidor iniciado en el puerto 50051
+2024-05-31 21:48:46,252 Mensaje recibido en el tema topic1: hola
+2024-05-31 21:48:46,252 Mensaje enviado del tema topic1: hola
+2024-05-31 21:48:57,391 Servidor detenido manualmente
+2024-05-31 22:26:51,806 Servidor iniciado en el puerto 50051
+2024-05-31 22:27:12,065 Servidor iniciado en el puerto 50051
+2024-05-31 22:27:15,109 Servidor detenido manualmente
+2024-05-31 22:27:19,988 Servidor iniciado en el puerto 50051
+2024-05-31 22:27:23,263 Servidor detenido manualmente
+2024-05-31 22:28:12,477 Servidor iniciado en el puerto 50051
+2024-05-31 22:28:13,676 Servidor detenido manualmente
+2024-05-31 22:28:23,904 Servidor iniciado en el puerto 50051
+2024-05-31 22:28:24,667 Servidor detenido manualmente
+2024-05-31 22:28:51,553 Servidor iniciado en el puerto 50051
+2024-05-31 22:28:53,074 Servidor detenido manualmente
+2024-05-31 22:29:34,485 Servidor iniciado en el puerto 50051
+2024-05-31 22:29:36,222 Servidor detenido manualmente
+2024-05-31 22:30:46,163 Servidor iniciado en el puerto 50051
+2024-05-31 22:31:12,507 Mensaje recibido en el tema topic2: messi
+2024-05-31 22:31:23,487 Mensaje enviado del tema topic2: messi
+2024-05-31 22:33:17,790 Servidor detenido manualmente
+2024-05-31 23:14:24,240 Servidor iniciado en el puerto 50051
+2024-05-31 23:15:02,530 Mensaje recibido en el tema topic1: anner
+2024-05-31 23:15:14,664 Mensaje enviado del tema topic1: anner
+2024-05-31 23:15:59,473 Mensaje recibido en el tema topic1: marcos
+2024-05-31 23:15:59,473 Mensaje enviado del tema topic1: marcos
+2024-05-31 23:16:21,668 Mensaje recibido en el tema topic1: ricobleto
+2024-05-31 23:16:21,668 Mensaje enviado del tema topic1: ricobleto
+2024-05-31 23:17:31,245 Mensaje recibido en el tema topic1: xd
+2024-05-31 23:17:31,245 Mensaje enviado del tema topic1: xd
+2024-05-31 23:24:10,508 Servidor detenido manualmente
+2024-05-31 23:24:33,123 Servidor iniciado en el puerto 50051
+2024-05-31 23:25:06,672 Mensaje recibido en el tema topic1: xd
+2024-05-31 23:25:06,672 Mensaje enviado del tema topic1: xd
+2024-05-31 23:25:07,678 Exception iterating responses: 
+Traceback (most recent call last):
+  File "C:\Users\UIser\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\grpc\_server.py", line 653, in _take_response_from_response_iterator
+    return next(response_iterator), True
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\UIser\UNA\SO\Proyecto_2_SO\server.py", line 61, in Subscribe
+    self.queues[topic].get(timeout=1)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\queue.py", line 179, in get
+    raise Empty
+_queue.Empty
+2024-05-31 23:25:40,429 Servidor detenido manualmente
+2024-05-31 23:25:49,804 Servidor iniciado en el puerto 50051
+2024-05-31 23:26:04,920 Mensaje recibido en el tema topic1: xd
+2024-05-31 23:26:29,735 Mensaje enviado del tema topic1: xd
+2024-05-31 23:26:44,220 Mensaje recibido en el tema topic1: ssss
+2024-05-31 23:26:44,220 Mensaje enviado del tema topic1: ssss
+2024-05-31 23:27:58,558 Servidor detenido manualmente
+2024-05-31 23:28:18,045 Servidor iniciado en el puerto 50051
+2024-05-31 23:28:28,473 Mensaje recibido en el tema topic1: hola
+2024-05-31 23:28:35,744 Mensaje enviado del tema topic1: hola
+2024-05-31 23:28:35,745 Error en Subscribe: pop from an empty deque
+2024-05-31 23:28:49,481 Error en Subscribe: pop from an empty deque
+2024-05-31 23:29:04,446 Servidor detenido manualmente
+2024-05-31 23:29:06,201 Servidor iniciado en el puerto 50051
+2024-05-31 23:29:12,046 Mensaje recibido en el tema topic1: xd
+2024-05-31 23:29:21,407 Mensaje enviado del tema topic1: xd
+2024-06-01 00:02:34,758 Servidor detenido manualmente
+2024-06-01 00:43:13,900 Servidor iniciado en el puerto 50051
+2024-06-01 00:43:42,031 Mensaje recibido en el tema topic1: aaaa
+2024-06-01 00:44:15,550 Mensaje enviado del tema topic1: aaaa
+2024-06-01 00:44:30,989 Mensaje recibido en el tema topic2: dssd
+2024-06-01 00:44:30,989 Mensaje enviado del tema topic2: dssd
+2024-06-01 00:45:01,817 Mensaje recibido en el tema topic1: ssss
+2024-06-01 00:45:01,817 Mensaje enviado del tema topic1: ssss
+2024-06-01 00:45:04,969 Mensaje recibido en el tema topic2: fdfdf
+2024-06-01 00:45:04,969 Mensaje enviado del tema topic2: fdfdf
+2024-06-01 00:52:21,579 Servidor iniciado en el puerto 50051
+2024-06-01 00:52:34,253 Mensaje recibido en el tema topic1: dddd
+2024-06-01 00:52:52,671 Mensaje enviado del tema topic1: dddd
+2024-06-01 00:53:29,669 Mensaje recibido en el tema topic1: hola
+2024-06-01 00:53:29,669 Mensaje enviado del tema topic1: hola
+2024-06-01 00:53:43,657 Mensaje recibido en el tema topic2: xd
+2024-06-01 00:53:43,657 Mensaje enviado del tema topic2: xd
+2024-06-01 00:54:03,666 Servidor detenido manualmente
+2024-06-01 00:55:52,374 Servidor iniciado en el puerto 50051
+2024-06-01 00:56:24,733 Mensaje recibido en el tema topic1: gggg
+2024-06-01 00:56:24,733 Mensaje enviado del tema topic1: gggg
+2024-06-01 00:56:34,922 Mensaje recibido en el tema topic2: ffff
+2024-06-01 00:56:34,922 Mensaje enviado del tema topic2: ffff
+2024-06-01 01:15:35,051 Servidor iniciado en el puerto 50051
+2024-06-01 01:15:45,628 Mensaje recibido en el tema topic1: xskjdskd
+2024-06-01 01:16:04,503 Mensaje enviado del tema topic1: xskjdskd
+2024-06-01 01:16:17,763 Mensaje recibido en el tema topic2: jdfa
+2024-06-01 01:16:17,763 Mensaje enviado del tema topic2: jdfa
+2024-06-01 01:18:08,818 Servidor iniciado en el puerto 50051
+2024-06-01 01:19:00,231 Mensaje recibido en el tema topic1: hola
+2024-06-01 01:20:15,965 Mensaje recibido en el tema topic1: lsls
+2024-06-01 01:20:15,965 Mensaje enviado del tema topic1: lsls
+2024-06-01 01:20:25,297 Mensaje recibido en el tema topic2: ddd
+2024-06-01 01:20:25,297 Mensaje enviado del tema topic2: ddd
+2024-06-01 01:21:59,036 Mensaje enviado del tema topic1: yyy
+2024-06-01 01:22:01,721 Mensaje enviado del tema topic1: yyy
+2024-06-01 01:22:03,249 Mensaje recibido en el tema topic1: yyy
+2024-06-01 01:22:26,267 Mensaje recibido en el tema topic2: xxxxx
+2024-06-01 01:22:26,269 Mensaje enviado del tema topic2: xxxxx
+2024-06-01 01:22:26,270 Mensaje enviado del tema topic2: xxxxx
+2024-06-01 01:22:53,816 Servidor iniciado en el puerto 50051
+2024-06-01 01:24:36,220 Mensaje recibido en el tema topic1: Hola a todos!
+2024-06-01 01:24:36,220 Mensaje enviado del tema topic1: Hola a todos!
+2024-06-01 01:24:36,220 Mensaje enviado del tema topic1: Hola a todos!
+2024-06-01 01:24:36,220 Mensaje enviado del tema topic1: Hola a todos!
+2024-06-01 01:24:36,220 Mensaje enviado del tema topic1: Hola a todos!
+2024-06-01 01:24:48,896 Mensaje recibido en el tema topic2: hola bro!
+2024-06-01 01:24:48,896 Mensaje enviado del tema topic2: hola bro!
+2024-06-01 01:24:48,896 Mensaje enviado del tema topic2: hola bro!
+2024-06-01 01:24:48,896 Mensaje enviado del tema topic2: hola bro!
+2024-06-01 01:25:04,777 Mensaje recibido en el tema topic3: xd
+2024-06-01 01:25:04,777 Mensaje enviado del tema topic3: xd
+2024-06-01 01:25:04,777 Mensaje enviado del tema topic3: xd
+2024-06-01 10:32:24,975 Servidor iniciado en el puerto 50051
+2024-06-01 10:32:37,584 Mensaje recibido en el tema topic1: hola
+2024-06-01 10:32:37,584 Exception calling application: release unlocked lock
+Traceback (most recent call last):
+  File "C:\Users\UIser\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\grpc\_server.py", line 609, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\UIser\UNA\SO\Proyecto_2_SO\server.py", line 39, in Publish
+    self.locks[topic].release()
+RuntimeError: release unlocked lock
+2024-06-01 10:33:01,269 Servidor iniciado en el puerto 50051
+2024-06-01 11:33:58,253 Mensaje recibido en el tema topic1: hola
+2024-06-01 11:33:58,254 Exception calling application: release unlocked lock
+Traceback (most recent call last):
+  File "C:\Users\UIser\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\grpc\_server.py", line 609, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\UIser\UNA\SO\Proyecto_2_SO\server.py", line 39, in Publish
+    self.locks[topic].release()
+RuntimeError: release unlocked lock
+2024-06-01 11:35:10,254 Servidor iniciado en el puerto 50051
+2024-06-01 11:35:19,909 Mensaje recibido en el tema topic1: hola
+2024-06-01 11:35:19,909 Exception calling application: release unlocked lock
+Traceback (most recent call last):
+  File "C:\Users\UIser\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\grpc\_server.py", line 609, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\UIser\UNA\SO\Proyecto_2_SO\server.py", line 39, in Publish
+    self.locks[topic].release()
+RuntimeError: release unlocked lock
+2024-06-01 11:36:23,693 Mensaje recibido en el tema topic1: hola
+2024-06-01 11:36:23,693 Mensaje enviado del tema topic1: hola
+2024-06-01 11:36:23,693 Exception calling application: release unlocked lock
+Traceback (most recent call last):
+  File "C:\Users\UIser\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\grpc\_server.py", line 609, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\UIser\UNA\SO\Proyecto_2_SO\server.py", line 39, in Publish
+    self.locks[topic].release()
+RuntimeError: release unlocked lock
+2024-06-01 11:41:51,039 Servidor iniciado en el puerto 50051
+2024-06-01 11:42:04,452 Mensaje recibido en el tema topic1: xd
+2024-06-01 11:42:47,130 Mensaje recibido en el tema topic2: aaaa
+2024-06-01 11:42:47,130 Mensaje enviado del tema topic2: aaaa
+2024-06-01 11:42:47,130 Mensaje enviado del tema topic2: aaaa
+2024-06-01 11:42:52,113 Mensaje recibido en el tema topic3: ala
+2024-06-01 11:42:52,113 Mensaje enviado del tema topic3: ala
+2024-06-01 11:43:16,357 Mensaje recibido en el tema topic1: xd
+2024-06-01 11:43:16,357 Mensaje enviado del tema topic1: xd
+2024-06-01 11:43:16,357 Mensaje enviado del tema topic1: xd
+2024-06-01 11:43:39,901 Mensaje recibido en el tema topic3: ajjaja
+2024-06-01 11:43:39,901 Mensaje enviado del tema topic3: ajjaja
+2024-06-01 11:43:59,857 Mensaje recibido en el tema topic2: fff
+2024-06-01 11:43:59,857 Mensaje enviado del tema topic2: fff
+2024-06-01 11:43:59,857 Mensaje enviado del tema topic2: fff
+2024-06-01 11:44:14,321 Mensaje recibido en el tema topic3: dddd
+2024-06-01 11:44:14,321 Mensaje enviado del tema topic3: dddd
+2024-06-01 11:51:12,528 Mensaje recibido en el tema topic3: a
+2024-06-01 11:51:12,528 Mensaje enviado del tema topic3: a
+2024-06-01 11:51:17,256 Mensaje recibido en el tema topic3: fr
+2024-06-01 11:51:19,473 Mensaje recibido en el tema topic3: r
+2024-06-01 11:51:21,785 Mensaje recibido en el tema topic3: d
+2024-06-01 11:51:24,025 Mensaje recibido en el tema topic3: j
+2024-06-01 11:51:27,008 Mensaje recibido en el tema topic3: rrr
+2024-06-01 11:51:30,232 Mensaje recibido en el tema topic3: eee
+2024-06-01 11:51:33,744 Mensaje recibido en el tema topic3: tttt
+2024-06-01 11:51:36,872 Mensaje recibido en el tema topic3: gggg
+2024-06-01 11:51:40,649 Mensaje recibido en el tema topic3: fdfdf
+2024-06-01 11:51:43,945 Mensaje recibido en el tema topic3: dffdfdf
+2024-06-01 11:51:47,225 Mensaje recibido en el tema topic3: dfdffddf
+2024-06-01 11:51:50,240 Mensaje recibido en el tema topic3: dfff

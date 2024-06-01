@@ -1,2 +1,3 @@
 __pycache__/
 *.log
+message_broker.log

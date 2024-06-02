@@ -1,21 +1,20 @@
+import queue
+import threading
+import logging
 import grpc
 from concurrent import futures
-import threading
-import queue
-import logging
 import message_broker_pb2
 import message_broker_pb2_grpc
-import signal
+import time
 
-VALID_TOPICS = ["topic1", "topic2", "topic3"]
+VALID_TOPICS = ['topic1', 'topic2', 'topic3']  # Ejemplo de temas válidos
 
 class MessageBrokerServicer(message_broker_pb2_grpc.MessageBrokerServicer):
     def __init__(self):
-        # Inicializa una lista de colas por cada tema
         self.queues = {topic: [] for topic in VALID_TOPICS}
-        # Inicializa una cola externa para cada tema
         self.external_queues = {topic: queue.Queue(maxsize=10) for topic in VALID_TOPICS}
         self.locks = {topic: threading.Lock() for topic in VALID_TOPICS}
+        self.conditions = {topic: threading.Condition(self.locks[topic]) for topic in VALID_TOPICS}
         self.log_file = 'message_broker.log'
         logging.basicConfig(filename=self.log_file, level=logging.INFO, format='%(asctime)s %(message)s')
 
@@ -67,14 +66,20 @@ class MessageBrokerServicer(message_broker_pb2_grpc.MessageBrokerServicer):
                 except queue.Full:
                     break
 
+        timeout_seconds = 60
+        last_message_time = time.time()
+        
         try:
             while True:
                 try:
                     message = q.get(timeout=1)
+                    last_message_time = time.time()
                     self.log_event(f'Mensaje enviado del tema {topic}: {message}')
                     yield message_broker_pb2.Message(topic=topic, message=message)
-                except queue.Empty:
-                    pass  # Volver a intentar después de esperar
+                except queue.Empty:  # Volver a intentar después de esperar
+                    if time.time() - last_message_time > timeout_seconds:
+                        self.log_event(f'Suscripción al tema {topic} terminada por inactividad')
+                        break
         except grpc.RpcError as e:
             self.log_event(f'Error de RPC en Subscribe: {e}')
         except Exception as e:
@@ -84,6 +89,8 @@ class MessageBrokerServicer(message_broker_pb2_grpc.MessageBrokerServicer):
         finally:
             with self.locks[topic]:
                 self.queues[topic].remove(q)
+                # Notificar a otros hilos en espera que una cola ha sido removida
+                self.conditions[topic].notify_all()
 
 def serve():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))

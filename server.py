@@ -1,3 +1,13 @@
+# Anner Angulo Gutierrez
+# Marcos Vasquez Diaz
+
+#Referencias:
+# https://www.youtube.com/watch?v=nwdL6NOBtGI
+# https://www.youtube.com/watch?v=sqlV8mHoils
+# https://grpc.io/
+# https://github.com/chelseafarley/PythonGrpc
+# https://www.ibm.com/topics/message-brokers
+
 import queue
 import threading
 import logging
@@ -7,7 +17,7 @@ import message_broker_pb2
 import message_broker_pb2_grpc
 import time
 
-VALID_TOPICS = ['topic1', 'topic2', 'topic3']  # Ejemplo de temas válidos
+VALID_TOPICS = ['Videojuegos', 'Deportes', 'Moda']  # Ejemplo de temas válidos
 
 class MessageBrokerServicer(message_broker_pb2_grpc.MessageBrokerServicer):
     def __init__(self):

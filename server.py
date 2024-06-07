@@ -1,3 +1,13 @@
+# Anner Angulo Gutierrez
+# Marcos Vasquez Diaz
+
+#Referencias:
+# https://www.youtube.com/watch?v=nwdL6NOBtGI
+# https://www.youtube.com/watch?v=sqlV8mHoils
+# https://grpc.io/
+# https://github.com/chelseafarley/PythonGrpc
+# https://www.ibm.com/topics/message-brokers
+
 import queue
 import threading
 import logging

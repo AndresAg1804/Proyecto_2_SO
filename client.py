@@ -13,7 +13,7 @@ import message_broker_pb2
 import message_broker_pb2_grpc
 import threading
 
-VALID_TOPICS = ["topic1", "topic2", "topic3"]
+VALID_TOPICS = ["Videojuegos", "Deporte", "Moda"]
 
 def handle_subscription(stub, topic):
     try:
@@ -31,21 +31,17 @@ def run_publisher():
         stub = message_broker_pb2_grpc.MessageBrokerStub(channel)
         while True:
             try:
-                topic = input("Ingrese el tema (o 'cambiar' para cambiar de modo, 'salir' para terminar): ")
+                topic = input("Ingrese el tema (o 'salir' para terminar): ")
                 if topic == 'salir':
                     print("Saliendo del modo productor.")
                     break
-                if topic == 'cambiar':
-                    return
                 if topic not in VALID_TOPICS:
                     print(f'Tema desconocido: {topic}. Los temas válidos son: {", ".join(VALID_TOPICS)}')
                     continue
-                message = input("Ingrese el mensaje (o 'cambiar' para cambiar de modo, 'salir' para terminar): ")
+                message = input("Ingrese el mensaje (o 'salir' para terminar): ")
                 if message == 'salir':
                     print("Saliendo del modo productor.")
                     break
-                if message == 'cambiar':
-                    return
                 stub.Publish(message_broker_pb2.PublishRequest(topic=topic, message=message))
             except KeyboardInterrupt:
                 print("\nSaliendo del modo productor.")
@@ -54,11 +50,9 @@ def run_publisher():
 def run_subscriber():
     with grpc.insecure_channel('localhost:50051') as channel:
         stub = message_broker_pb2_grpc.MessageBrokerStub(channel)
-        topics = input("Ingrese los temas a suscribir, separados por comas (o 'cambiar' para cambiar de modo, 'salir' para terminar): ")
+        topics = input("Ingrese los temas a suscribir, separados por comas (o 'salir' para terminar): ")
         if topics == 'salir':
             print("Saliendo del modo consumidor.")
-            return
-        if topics == 'cambiar':
             return
         topic_list = [topic.strip() for topic in topics.split(',')]
         invalid_topics = [topic for topic in topic_list if topic not in VALID_TOPICS]

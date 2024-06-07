@@ -17,7 +17,7 @@ import message_broker_pb2
 import message_broker_pb2_grpc
 import time
 
-VALID_TOPICS = ['topic1', 'topic2', 'topic3']  # Ejemplo de temas válidos
+VALID_TOPICS = ['Videojuegos', 'Deportes', 'Moda']  # Ejemplo de temas válidos
 
 class MessageBrokerServicer(message_broker_pb2_grpc.MessageBrokerServicer):
     def __init__(self):

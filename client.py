@@ -13,7 +13,7 @@ import message_broker_pb2
 import message_broker_pb2_grpc
 import threading
 
-VALID_TOPICS = ["Videojuegos", "Deporte", "Moda"]
+VALID_TOPICS = ["Videojuegos", "Deportes", "Moda"]
 
 def handle_subscription(stub, topic):
     try:

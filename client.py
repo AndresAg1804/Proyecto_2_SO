@@ -61,7 +61,7 @@ def run_subscriber():
             return
 
         try:
-            print("Si desea salir, presione Ctrl+C.")
+            print("Si desea salir, debe esperar 1min para que la suscripcion quede invalida.")
             threads = []
             for topic in topic_list:
                 thread = threading.Thread(target=handle_subscription, args=(stub, topic))
